@@ -1,6 +1,6 @@
 {
   "name": "@quangdao/brandkit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Branding kit for quangdao.com and my silly little projects.",
   "main": "index.js",
   "style": "./scss/core.scss",
