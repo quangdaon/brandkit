@@ -1,8 +1,9 @@
 {
   "name": "@quangdao/brandkit",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Branding kit for quangdao.com and my silly little projects.",
   "main": "index.js",
+  "style": "./scss/core.scss",
   "type": "module",
   "scripts": {
     "build": "rollup -c",
@@ -14,5 +15,8 @@
     "rollup": "^4.17.2",
     "rollup-plugin-scss": "^4.0.0",
     "sass": "^1.76.0"
+  },
+  "dependencies": {
+    "@quangdao/scissors": "^1.0.0"
   }
 }

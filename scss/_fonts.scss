@@ -1,0 +1,7 @@
+@use 'variables' as *;
+
+@mixin families {
+	--font-primary: #{$font-primary};
+	--font-code: #{$font-code};
+	--font-script: #{$font-script};
+}

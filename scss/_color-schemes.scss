@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+@use '@quangdao/scissors/scss/colors' with (
+  $color-sets: $brand-colors
+);
+
+@mixin base {
+  --color-black: var(--color-gray-900);
+  --color-white: var(--color-gray-0);
+  --color-highlight: var(--color-green-base);
+
+  @include colors.shades;
+}
+
+@mixin light {
+	--color-foreground: var(--color-black);
+	--color-background: var(--color-white);
+	--color-input: var(--color-gray-50);
+	--color-heading: var(--color-green-base);
+	--color-subheading: var(--color-blue-base);
+	--color-link: var(--color-blue-base);
+	--color-link-hover: var(--color-green-base);
+	--color-link-decoration: var(--color-orange-base);
+	--color-code: var(--color-purple-base);
+}
+
+@mixin dark {
+  --color-foreground: var(--color-white);
+  --color-background: var(--color-black);
+  --color-input: var(--color-gray-850);
+  --color-heading: var(--color-orange-base);
+  --color-subheading: var(--color-white);
+  --color-highlight: var(--color-orange-base);
+  --color-link: var(--color-white);
+  --color-link-hover: var(--color-white);
+  --color-code: var(--color-orange-base);
+}

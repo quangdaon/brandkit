@@ -1,2 +1,1 @@
-import './style/bundles/brand.scss';
-import './style/bundles/all.scss';
+import './scss/core.scss';

@@ -1,0 +1,9 @@
+:root {
+  @include fonts.families;
+  @include color-schemes.base;
+  @include color-schemes.light;
+
+  @include media.dark {
+    @include color-schemes.dark;
+  }
+}

@@ -1,0 +1,72 @@
+html,
+body {
+  font-family: var(--font-primary);
+  scrollbar-color: var(--color-green-base) var(--color-white);
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-weight: 200;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+
+@include elements.anchor {
+  text-decoration-color: var(--color-link-decoration);
+  transition: 500ms;
+  &:hover {
+    color: var(--color-link-hover);
+    text-decoration-thickness: 0.125em;
+  }
+}
+
+svg {
+  fill: var(--color-foreground);
+}
+
+h1 {
+  color: var(--color-heading);
+}
+
+h2,
+h3 {
+  color: var(--color-subheading);
+}
+
+input,
+textarea {
+  color: inherit;
+  border: none;
+  outline: none;
+  background: var(--color-input);
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+pre,
+code {
+  font-family: var(--font-code);
+}
+
+p code {
+  color: var(--color-code);
+}
+
+mark {
+  background: transparent;
+  color: var(--color-highlight);
+}
+
+input,
+button {
+  font-family: var(--font-primary);
+}
+
+textarea {
+  font-family: var(--font-code);
+}

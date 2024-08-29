@@ -1,0 +1,18 @@
+@use '@quangdao/scissors/scss/layout';
+
+.container {
+  @extend %container;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+summary {
+  margin: 0 0 var(--spacing);
+}
