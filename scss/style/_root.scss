@@ -1,9 +1,16 @@
-:root {
-  @include fonts.families;
-  @include color-schemes.base;
-  @include color-schemes.light;
+@use '@quangdao/scissors/scss/media';
 
-  @include media.dark {
-    @include color-schemes.dark;
+@use '../color-schemes';
+@use '../fonts';
+
+@mixin styles {
+  :root {
+    @include fonts.families;
+    @include color-schemes.base;
+    @include color-schemes.light;
+
+    @include media.dark {
+      @include color-schemes.dark;
+    }
   }
 }

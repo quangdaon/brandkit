@@ -1,20 +1,19 @@
-@use 'color-schemes';
-@use 'fonts';
-@use '@quangdao/scissors/scss/media';
-@use '@quangdao/scissors/scss/elements';
+@use 'style/reset';
+@use 'style/layout';
+@use 'style/root';
+@use 'style/brand';
 
 @import url('https://use.typekit.net/zxo6has.css');
 
 @layer reset {
-  @import 'style/reset';
+  @include reset.styles;
 }
 
 @layer layout {
-  @import 'style/layout';
-
+  @include layout.styles;
 }
 
 @layer brand {
-  @import 'style/root';
-  @import 'style/brand';
+  @include root.styles;
+  @include brand.styles;
 }

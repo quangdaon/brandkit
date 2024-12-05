@@ -1,18 +1,20 @@
 @use '@quangdao/scissors/scss/elements';
 
-@include elements.anchor {
-  color: currentColor;
-}
-
-button {
-  cursor: pointer;
-}
-
-abbr {
-  text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: bold;
+@mixin styles {
+  @include elements.anchor {
+    color: currentColor;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  abbr {
+    text-decoration: underline dotted;
+  }
+  
+  b,
+  strong {
+    font-weight: bold;
+  }
 }
