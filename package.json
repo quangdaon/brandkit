@@ -2,6 +2,9 @@
   "name": "@quangdao/brandkit",
   "version": "0.2.1",
   "description": "Branding kit for quangdao.com and my silly little projects.",
+  "repository": {
+    "url": "https://github.com/quangdaon/brandkit"
+  },
   "main": "index.js",
   "style": "./scss/core.scss",
   "type": "module",
